@@ -12,6 +12,14 @@ import sys
 def log(message):
     print(str(datetime.today()) + ' ' + str(message))
 
+# API documentation:
+#
+# Server receives POST and GET requests to URI /?id=vk_profile_id&access_token=vk_token
+#
+# GET receives profile photo, put there dates and sends it back to browser
+#
+# POST receives the same but image becomes inverted
+
 
 class VKPhoto(BaseHTTPRequestHandler):
 
